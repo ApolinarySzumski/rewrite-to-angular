@@ -1,0 +1,140 @@
+.user-card-section {
+  background-color: var(--background);
+  border-radius: 4px;
+  display: flex;
+}
+
+.user-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 20px;
+}
+
+.user-card {
+  flex: 1 1 calc((100% - 40px - 20px) / 3);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1130px) {
+  .user-card {
+    flex: 1 1 calc((100% - 40px - 20px) / 3);
+    max-width: 33.333%;
+  }
+}
+
+@media screen and (min-device-width: 421px) and (max-device-width: 800px) {
+  .user-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-device-width: 420px) and (orientation: portrait) {
+  .user-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.user-card::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--background);
+  position: absolute;
+  bottom: 45px;
+  left: 0px;
+}
+.user-card-top-container {
+  display: flex;
+  gap: 12px;
+}
+.user-card-image {
+  border-radius: 4px;
+  width: 76px;
+  height: 76px;
+}
+.user-card-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-card-github-nickname {
+  font-size: 18px;
+}
+.iuser-card-inside-container {
+  display: flex;
+  gap: 15px;
+}
+.user-card-team-badge {
+  font-size: 12px;
+  display: block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  text-align: center;
+  max-width: 68px;
+}
+.user-card-team-badge-teamA {
+  background-color: var(--team-a-background);
+  color: var(--team-a-text);
+}
+.user-card-team-badge-teamB {
+  background-color: var(--team-b-background);
+  color: var(--team-b-text);
+}
+.user-card-team-badge-teamC {
+  background-color: var(--team-c-background);
+  color: var(--team-c-text);
+}
+.user-card-id {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+.user-card-link {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.user-card-link:focus {
+  color: var(--secondary-text);
+}
+.user-card-link:hover {
+  color: var(--link-button);
+}
+.user-card-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.user-card-details-link {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.user-card-details-link:hover {
+  color: var(--link-button);
+}
+.user-card-button {
+  cursor: pointer;
+  color: var(--secondary-text);
+  background-color: #084a1fed;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+}
+.user-card-button:hover {
+  color: var(--link-button);
+  background-color: #60e40df5;
+}

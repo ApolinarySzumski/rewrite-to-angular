@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --base-text: #262626;
+  --background: #f5f5f5;
+  --secondary-text: #999999;
+  --link-button: #1a74ff;
+  --team-a-background: #b3d1ff;
+  --team-a-text: #0047b3;
+  --team-b-background: #ffd6c8;
+  --team-b-text: #c83300;
+  --team-c-background: #a6fcc8;
+  --team-c-text: #059e42;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-y: auto;
+}
+
+body {
+  max-width: 1130px;
+  padding: 30px;
+  background-color: var(--background);
+  color: var(--base-text);
+  font-size: 14px;
+  margin: 0 auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  scrollbar-width: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,26 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.app-icon-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.app-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--link-button);
+}
+.app-link:hover {
+  text-decoration: underline;
+  color: var(--base-text);
+}
+.app-icon-text {
+  font-size: 16px;
+}
+.app-title {
+  font-size: 24px;
+  font-weight: 600;
+}
