@@ -9,7 +9,7 @@ export class HttpClientService {
   readonly http: HttpClient = inject(HttpClient);
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({
-      Authorization: 'Bearer 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',
+      // Authorization: 'Bearer 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',
       Accept: 'application/vnd.github.v3+json',
     }),
   }
